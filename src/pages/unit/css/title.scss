@@ -1,0 +1,84 @@
+.title--game {
+    width: 100%;
+    background: #C2003C;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-sizing: border-box
+}
+
+.title--game-center {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.title--game--content {
+    width: 100%;
+    background: #fff;
+    min-height: 200px
+}
+
+.title--game-title {
+    text-align: left;
+    color: #fff
+}
+
+.title--game-title-top {
+    padding-bottom: 10px;
+}
+
+.title--game-title-txt {
+    h2 {
+        margin-right: 10px;
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+}
+
+.span {
+    opacity: .7;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.rounded-border {
+    height: 30px;
+    line-height: 30px;
+    border-radius: 0 20px 20px 20px;
+    padding: 0px 10px 0px 10px;
+    font-weight: 700;
+    font-size: 12px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.book-title,
+.of {
+    background: #FFB300;
+    color: #C2003C;
+    width: 80px;
+}
+.of {
+    width: 50px;
+}
+
+.steps {
+    background: #ccc;
+    color: #C2003C;
+    width: 50px;
+}
+
+.unit {
+    background: #00B9FF;
+    color: #fff;
+    width: 50px;
+}
+.points {
+    flex-basis: 150px;
+}
+.pp {
+    width: 20px;
+    height: 4px;
+    background: #ccc;
+    border-radius: 10px;
+    margin: 1px
+}

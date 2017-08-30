@@ -1,0 +1,35 @@
+.itemBox {
+  flex-grow: 1;
+  flex-basis: 727px;
+  text-align: center;
+}
+
+.itemBox.sidebar {
+  flex-basis: 230px
+}
+
+.item {
+  background: #fff;
+  border-radius: 20px;
+  margin: 10px;
+  margin-bottom: 20px;
+}
+
+.item-space {
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1079px) {
+  .itemBox {
+    margin-top: 0px;
+    margin-bottom: 0px
+  }
+  .item {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  .item1 {
+    margin-top: 10px;
+  }
+}

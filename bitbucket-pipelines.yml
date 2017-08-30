@@ -1,0 +1,10 @@
+image: node:6
+clone:
+  depth: full
+pipelines:
+  default:
+    - step:
+        script:
+          - npm install
+          - npm run build
+          - git push https://heroku:$71d214da-6549-43de-bc48-9a1e7d86ed7f@git.heroku.com/$gustavoquinalha.git HEAD

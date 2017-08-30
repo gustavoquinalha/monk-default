@@ -1,0 +1,107 @@
+@font-face {
+    font-family: Avenir;
+    src: url('../fonts/OpenSans/Regular/OpenSans-Regular.woff') format('woff'), url('../fonts/OpenSans/Regular/OpenSans-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans/Regular/OpenSans-Regular.svg') format('svg'), url('../fonts/OpenSans/Regular/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url('../fonts/OpenSans/ExtraBold/OpenSans-ExtraBold.woff') format('woff'), url('../fonts/OpenSans/ExtraBold/OpenSans-ExtraBold.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans/ExtraBold/OpenSans-ExtraBold.svg') format('svg'), url('../fonts/OpenSans/ExtraBold/OpenSans-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: inherit;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body,
+html {
+    height: 100%;
+    background: #6AB7CD
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.teste {
+    height: 100vh;
+    width: 100%;
+}
+
+.slide-fade-page-enter-active {
+    transition: all .3s ease;
+}
+
+.slide-fade-page-leave-active {
+    transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+
+.slide-fade-page-enter,
+.slide-fade-page-leave-to {
+    transform: translateX(10px);
+    opacity: 0;
+}
+
+.primary {
+    background: #C2003C;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    height: 40px;
+}
+
+.blue {
+    background: #00B9FF;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    height: 40px;
+}
+
+.yellow {
+    background: #FFB300;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    height: 40px;
+}
+
+.green {
+    background: #00CB9B;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    height: 40px;
+}
+
+.purple {
+    background: #AF00C2;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    height: 40px;
+}
+
+.order1 {
+    order: 2
+}
+
+.order2 {
+    order: 1
+}
+
+@media screen and (max-width: 1079px) {}

@@ -1,0 +1,16 @@
+import Vue from 'vue';
+import Vuex from 'vuex';
+import auth from './modules/auth';
+
+const isProduction = process.env.NODE_ENV === 'production';
+
+Vue.use(Vuex)
+
+export default new Vuex.Store({
+  modules: {
+    auth,
+    // shop: shopModule,
+    // cart : cartModule
+  },
+  strict : !isProduction
+})

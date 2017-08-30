@@ -1,0 +1,14 @@
+.fullHeight {
+  height:100%;
+}
+.nprogress-custom-parent {
+  overflow: visible!important;
+  position: relative;
+}
+.ui-radio.is-checked .ui-radio__inner-circle {
+  transform: scale(0.57)!important;
+}
+.ui-radio__inner-circle {
+  height: 1.50rem!important;
+  width: 1.50rem!important;
+}
