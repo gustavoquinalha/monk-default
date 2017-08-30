@@ -18,90 +18,81 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-body,
-html {
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
     height: 100%;
-    background: #6AB7CD
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+html {
+    box-sizing: border-box;
+    -ms-overflow-style: scrollbar;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 a {
+    color: #007bff;
     text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
 }
 
-ul {
-    list-style-type: none;
+a:hover {
+    color: #0056b3;
 }
 
-.teste {
-    height: 100vh;
+input,
+button,
+select,
+optgroup,
+textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    outline: none
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+pre,
+code {
     width: 100%;
+    box-sizing: border-box;
 }
-
-.slide-fade-page-enter-active {
-    transition: all .3s ease;
-}
-
-.slide-fade-page-leave-active {
-    transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
-}
-
-.slide-fade-page-enter,
-.slide-fade-page-leave-to {
-    transform: translateX(10px);
-    opacity: 0;
-}
-
-.primary {
-    background: #C2003C;
-    border-radius: 20px;
-    border: none;
-    color: #fff;
-    text-transform: uppercase;
-    height: 40px;
-}
-
-.blue {
-    background: #00B9FF;
-    border-radius: 20px;
-    border: none;
-    color: #fff;
-    text-transform: uppercase;
-    height: 40px;
-}
-
-.yellow {
-    background: #FFB300;
-    border-radius: 20px;
-    border: none;
-    color: #fff;
-    text-transform: uppercase;
-    height: 40px;
-}
-
-.green {
-    background: #00CB9B;
-    border-radius: 20px;
-    border: none;
-    color: #fff;
-    text-transform: uppercase;
-    height: 40px;
-}
-
-.purple {
-    background: #AF00C2;
-    border-radius: 20px;
-    border: none;
-    color: #fff;
-    text-transform: uppercase;
-    height: 40px;
-}
-
-.order1 {
-    order: 2
-}
-
-.order2 {
-    order: 1
-}
-
-@media screen and (max-width: 1079px) {}

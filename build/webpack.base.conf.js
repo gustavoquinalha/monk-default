@@ -37,10 +37,10 @@ module.exports = {
 
     new WebpackPwaManifest({
       filename: "manifest.json",
-      name: 'EAD Minds',
-      short_name: 'EADMinds',
-      description: 'EAD',
-      background_color: '#C2003C',
+      name: 'Monk',
+      short_name: 'Monk',
+      description: 'Monk',
+      background_color: '#222222',
       orientation: "portrait",
       display: "standalone",
       icons: [{
@@ -78,9 +78,9 @@ module.exports = {
       // Inject the html into the html-webpack-plugin
       inject: true,
       // favicon background color (see https://github.com/haydenbleasel/favicons#usage)
-      background: '#C2003C',
+      background: '#222222',
       // favicon app title (see https://github.com/haydenbleasel/favicons#usage)
-      title: 'EAD Minds',
+      title: 'Monk',
       // which icons should be generated (see https://github.com/haydenbleasel/favicons#usage)
       icons: {
         android: true,

@@ -1,48 +1,33 @@
 <template>
-
   <div v-on:resize="handleResize($event)">
-    <v-touch>
-      <div class="fullHeight">
-        <router-view name="fullView"></router-view>
+  
+    <div class="container">
+  
+      <transition name="slide-fade-page">
         <router-view name="menuView" :showMenu="showMenu" @show-menu="receiveToggleMenu"></router-view>
-
-        <div class="container-page">
-
-          <transition name="slide-fade-page">
-            <router-view></router-view>
-          </transition>
-
-          <transition name="slide-fade-page">
-            <router-view name="sidebarView"></router-view>
-          </transition>
-
-        </div>
-
-      </div>
-    </v-touch>
+      </transition>
+  
+      <transition name="slide-fade-page">
+        <router-view></router-view>
+      </transition>
+    </div>
+  
   </div>
 </template>
 
 <script>
   import Vue from 'vue'
-  import VueTouch from 'vue-touch'
-
-  Vue.use(VueTouch);
-
-  VueTouch.config.swipe = {
-    direction: 'horizontal'
-  };
-
+  
+  
   export default {
     name: 'app',
-    components: {
-    },
-
+    components: {},
+  
     data() {
       return {
         windowWidth: 0,
         windowHeight: 0,
-
+  
         showMenu: false,
         showMobile: false,
       }
@@ -59,12 +44,12 @@
       handleResize(event) {
         this.windowWidth = event.currentTarget.innerWidth;
       },
-
-
-      toggleMenu: function () {
+  
+  
+      toggleMenu: function() {
         this.showMenu = !this.showMenu
       },
-      receiveToggleMenu: function (e) {
+      receiveToggleMenu: function(e) {
         // if (showMenuResize) {
         this.showMenu = !this.showMenu
         // }
@@ -72,10 +57,9 @@
     },
     beforeDestroy() {
       window.removeEventListener('resize', this.handleResize)
-
+  
     }
   }
-
 </script>
 
 <style>
@@ -95,5 +79,4 @@
     flex-wrap: wrap;
     min-height: calc(100vh - 180px);
   }
-
 </style>

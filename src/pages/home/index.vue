@@ -1,18 +1,17 @@
 <template>
-  <!-- <div class="content" v-loading.fullscreen.lock="loading" element-loading-text="Carregando..."></div> -->
-  <div class="itemBox order2">
- 
-    <div class="item">
-1
-    </div>
-    <div class="item">
-1
-    </div>
+  <div class="flex-basis-1100 flex-grow-1 conteudo-principal">
+  teste
   </div>
 </template>
 
-<style media="screen">
+<style media="screen" lang="scss" scoped>
     @import './css/item.scss';
+
+    .conteudo-principal {
+      background: #F2F4F8;
+      box-sizing: border-box;
+      padding-left: 20px;
+    }
 </style>
 
 <script type="text/javascript">
