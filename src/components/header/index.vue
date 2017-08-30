@@ -1,9 +1,12 @@
 <template>
-<div class="flex-basis-100 menu-relative">
-    <div class="menu">menu</div>
-
-
-
+  <div class="flex-basis-100 flex-grow-1 menu-relative">
+    <div class="menu container column align-items-center justify-content-start">
+      <div class="menu--logo">
+        <h1>M</h1>
+      </div>
+      <div class="menu--links">links</div>
+  
+    </div>
   </div>
 </template>
 
@@ -12,6 +15,7 @@
   .menu-user-stats-power {
     display: none;
   }
+  
   .slide-fade-enter-active {
     transition: all .1s cubic-bezier(.37, .61, .58, .86);
   }
@@ -43,7 +47,7 @@
   .fade-menu-leave-to {
     opacity: 0
   }
-
+  
   @media screen and (max-width: 1079px) {
     .menu-user-stats-power {
       display: block
@@ -53,7 +57,8 @@
 
 <script>
   import {
-    mapMutations, mapGetters
+    mapMutations,
+    mapGetters
   }
   from 'vuex'
   import authService from '@/services/auth.service'
@@ -61,10 +66,10 @@
     SIGN_OUT
   }
   from '@/modules/auth/'
-
+  
   export default {
     components: {
-      
+  
     },
     props: {
       showMenu: {
