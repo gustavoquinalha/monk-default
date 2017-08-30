@@ -1,4 +1,4 @@
-# vue-clinify
+# Vue boilerplate Monk
 
 > A Vue.js project
 
